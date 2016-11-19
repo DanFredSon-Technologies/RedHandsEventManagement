@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_corporate_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.danfredson.redhandseventmanagement.CorporateEvents">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_conferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Conferences" />
+
+            <CheckBox
+                android:id="@+id/checkbox_seminars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Seminars" />
+
+            <CheckBox
+                android:id="@+id/checkbox_meetings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Meetings" />
+
+            <CheckBox
+                android:id="@+id/checkbox_team_building_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Team Building Events" />
+
+            <CheckBox
+                android:id="@+id/checkbox_trade_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Trade Shows" />
+
+            <CheckBox
+                android:id="@+id/checkbox_business_dinners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Business Dinners" />
+
+            <CheckBox
+                android:id="@+id/checkbox_opening_ceremonies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Opening Ceremonies" />
+
+            <CheckBox
+                android:id="@+id/checkbox_press_conferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Press Conferences" />
+
+            <CheckBox
+                android:id="@+id/checkbox_networking_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Networking Events" />
+
+            <CheckBox
+                android:id="@+id/checkbox_stilt_walkers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Stilt Walkers" />
+
+            <CheckBox
+                android:id="@+id/checkbox_product_launches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Product Launches" />
+
+            <Button
+                android:id="@+id/button_check_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="checkRequirements"
+                android:text="Check Requirements" />
+
+            <TextView
+                android:id="@+id/textView_your_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Requirements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_selected_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_enter_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText_enter_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Mail ID"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/button_send_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Send Requirements" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

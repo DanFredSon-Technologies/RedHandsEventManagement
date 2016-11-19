@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_btl_activities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.danfredson.redhandseventmanagement.BtlActivities">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_mall_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Mall Activities" />
+
+            <CheckBox
+                android:id="@+id/checkbox_road_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Road Shows" />
+
+            <CheckBox
+                android:id="@+id/checkbox_biker_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Biker Activities" />
+
+            <CheckBox
+                android:id="@+id/checkbox_direct_sales_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Direct Sales Activities" />
+
+            <CheckBox
+                android:id="@+id/checkbox_leaflet_and_pamphlet_distribution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Leaflet and Pamphlet Distribution" />
+
+            <CheckBox
+                android:id="@+id/checkbox_sample_distribution_in_schools_and_colleges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Sample Distribution in Schools and Colleges" />
+
+            <Button
+                android:id="@+id/button_check_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="checkRequirements"
+                android:text="Check Requirements" />
+
+            <TextView
+                android:id="@+id/textView_your_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Requirements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_selected_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_enter_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText_enter_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Mail ID"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/button_send_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Send Requirements" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lifestyle_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.danfredson.redhandseventmanagement.LifestyleEvents">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_fashion_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Fashion Shows" />
+
+            <CheckBox
+                android:id="@+id/checkbox_premium_product_launches_and_showcases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Premium Product Launches and Showcases" />
+
+            <CheckBox
+                android:id="@+id/checkbox_exclusive_media_showings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Exclusive Media Showings" />
+
+            <CheckBox
+                android:id="@+id/checkbox_film_launches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Film Launches" />
+
+            <CheckBox
+                android:id="@+id/checkbox_television_show_launches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Television Show Launches" />
+
+            <CheckBox
+                android:id="@+id/checkbox_concerts_and_stage_shows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Concerts and Stage Shows" />
+
+            <CheckBox
+                android:id="@+id/checkbox_milestone_celebations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Milestone Celebrations" />
+
+            <CheckBox
+                android:id="@+id/checkbox_theme_celebrations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Theme Celebrations" />
+
+            <CheckBox
+                android:id="@+id/checkbox_musical_performances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Musical Performances" />
+
+            <CheckBox
+                android:id="@+id/checkbox_exclusice_by_invite_only_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Exclusive ‘By Invite Only’ Events" />
+
+            <Button
+                android:id="@+id/button_check_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="checkRequirements"
+                android:text="Check Requirements" />
+
+            <TextView
+                android:id="@+id/textView_your_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Requirements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_selected_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_enter_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText_enter_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Mail ID"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/button_send_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Send Requirements" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

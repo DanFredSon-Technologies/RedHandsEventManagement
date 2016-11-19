@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_celebrity_management"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.danfredson.redhandseventmanagement.CelebrityManagement">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_dancers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Dancers" />
+
+            <CheckBox
+                android:id="@+id/checkbox_dj_artists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="DJ Artists" />
+
+            <CheckBox
+                android:id="@+id/checkbox_mimicry_artists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Mimicry Artists" />
+
+            <CheckBox
+                android:id="@+id/checkbox_music_directors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Music Directors" />
+
+            <CheckBox
+                android:id="@+id/checkbox_silver_screen_actors_actresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Silver Screen Actors/Actresses" />
+
+            <CheckBox
+                android:id="@+id/checkbox_small_screen_actors_actresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Small Screen Actors/Actresses" />
+
+            <CheckBox
+                android:id="@+id/checkbox_standup_comedians"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Stand-up Comedians" />
+
+            <CheckBox
+                android:id="@+id/checkbox_supporting_actors_actresses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Supporting Actors/Actresses" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vj_artists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="VJ Artists" />
+
+            <CheckBox
+                android:id="@+id/checkbox_vocals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Vocals" />
+
+            <Button
+                android:id="@+id/button_check_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="checkRequirements"
+                android:text="Check Requirements" />
+
+            <TextView
+                android:id="@+id/textView_your_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Requirements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_selected_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_enter_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText_enter_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Mail ID"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/button_send_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Send Requirements" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

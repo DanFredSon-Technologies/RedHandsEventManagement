@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_birthday_parties"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    tools:context="com.danfredson.redhandseventmanagement.BirthdayParties">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_birthday_candles_caps_props"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Birthday Candles, Caps, Props" />
+
+            <CheckBox
+                android:id="@+id/checkbox_bouncing_castle_and_stall_games"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Bouncing Castle and Stall Games" />
+
+            <CheckBox
+                android:id="@+id/checkbox_cartoon_characters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Cartoon Characters" />
+
+            <CheckBox
+                android:id="@+id/checkbox_emcee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Emcee" />
+
+            <CheckBox
+                android:id="@+id/checkbox_kids_entertainment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Kids Entertainment" />
+
+            <CheckBox
+                android:id="@+id/checkbox_magicians"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Magicians" />
+
+            <CheckBox
+                android:id="@+id/checkbox_popcorns_and_cotton_candy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Popcorns and Cotton Candy" />
+
+            <CheckBox
+                android:id="@+id/checkbox_stilt_walkers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Stilt Walkers" />
+
+            <CheckBox
+                android:id="@+id/checkbox_tattoo_and_face_painters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Tattoo and Face Painters" />
+
+            <CheckBox
+                android:id="@+id/checkbox_themes_parties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Themes Parties" />
+
+            <CheckBox
+                android:id="@+id/checkbox_venue_decorations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="selectRequirements"
+                android:text="Venue Decorations" />
+
+            <Button
+                android:id="@+id/button_check_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:onClick="checkRequirements"
+                android:text="Check Requirements" />
+
+            <TextView
+                android:id="@+id/textView_your_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Requirements"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_selected_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText_enter_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Phone Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText_enter_mail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Mail ID"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/button_send_requirements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Send Requirements" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

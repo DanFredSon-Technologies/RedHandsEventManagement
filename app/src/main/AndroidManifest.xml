@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danfredson.redhandseventmanagement">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Red Hands Event Management"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Red Hands Event Management">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BtlActivities"
+            android:label="BTL Activities" />
+        <activity
+            android:name=".BirthdayParties"
+            android:label="Birthday Parties" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us" />
+        <activity
+            android:name=".WeddingPlanning"
+            android:label="Wedding Planning" />
+        <activity
+            android:name=".TheInitiatives"
+            android:label="The Initiatives" />
+        <activity
+            android:name=".CelebrityManagement"
+            android:label="Celebrity Management" />
+        <activity
+            android:name=".CorporateEvents"
+            android:label="Corporate Events" />
+        <activity
+            android:name=".Inaugurations"
+            android:label="Inaugurations" />
+        <activity
+            android:name=".LifestyleEvents"
+            android:label="Lifestyle Events" />
+        <activity
+            android:name=".ExhibitionStalls"
+            android:label="Exhibition Stalls" />
+        <activity
+            android:name=".PrivateParties"
+            android:label="Private Parties" />
+        <activity
+            android:name=".Branding"
+            android:label="Branding" />
+        <activity
+            android:name=".Sponsorship"
+            android:label="Sponsorship" />
+    </application>
+
+</manifest>
